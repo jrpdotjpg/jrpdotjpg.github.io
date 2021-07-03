@@ -1,8 +1,11 @@
-import { Link } from 'gatsby';
+import { Link, withPrefix } from 'gatsby';
 import get from 'lodash/get';
 import React from 'react';
 
 import profileImg from '../../images/profile.jpg';
+
+// import downloadFile from '../static/'
+
 
 const classes = {
   wrapper: 'block mb-6 md:flex',
@@ -73,6 +76,13 @@ const Header = ({ metadata = {}, noBlog = false, noProj = false }) => {
               </Link>
             </li>
           )}
+          {
+            <li className={classes.item}>
+              <Link className={classes.link} href={withPrefix('/CV.pdf')} download>
+                There's more?! (Download CV)
+              </Link>
+            </li>
+          }
         </ul>
       </div>
     </div>

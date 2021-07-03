@@ -24,7 +24,7 @@ const BlogPost = ({ data }) => {
       <SEO title={post.frontmatter.title} />
       <h1 className={classes.title}>{post.frontmatter.title}</h1>
       <p className={classes.date}>
-        Posted on {moment(post.frontmatter.date).format('MMMM D, YYYY')}
+        {moment(post.frontmatter.date).format('MMMM D, YYYY')}
       </p>
       <div
         className={classes.wrapper}
