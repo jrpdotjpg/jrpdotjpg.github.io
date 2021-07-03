@@ -28,8 +28,8 @@ const Index = ({ data }) => {
       <Header metadata={data.site.siteMetadata} noBlog={noBlog} />
       {about && <SectionAbout about={about} />}
       {projects && projects.length && <SectionProjects projects={projects} />}
-      {!noBlog && <SectionBlog posts={blogposts} />}
       {!noProj && <SectionProjMore projects={projposts} />}
+      {!noBlog && <SectionBlog posts={blogposts} />}
       {experience && experience.length && (
         <SectionExperience experience={experience} />
       )}
@@ -70,7 +70,7 @@ export const pageQuery = graphql`
     blogmd: allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       limit: 5
-      filter: {fileAbsolutePath: {regex: "/(blog)/"  }}
+      filter: {fileAbsolutePath: {regex: "/content/blog/"  }}
     ) {
       edges {
         node {
@@ -89,7 +89,7 @@ export const pageQuery = graphql`
     projmd: allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       limit: 5
-      filter: {fileAbsolutePath: {regex: "/(projectposts)/"  }}
+      filter: {fileAbsolutePath: {regex: "/projectposts/"  }}
     ) {
       edges {
         node {

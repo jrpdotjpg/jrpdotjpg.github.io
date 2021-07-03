@@ -39,7 +39,10 @@ export const pageQuery = graphql`
         linkedin
       }
     }
-    blogmd: allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    blogmd: allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: {fileAbsolutePath: {regex: "/content/blog/"  }}
+    ) {
       edges {
         node {
           excerpt
