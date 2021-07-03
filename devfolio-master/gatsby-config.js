@@ -19,10 +19,10 @@ module.exports = {
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
-        name: 'Test',
-        description:
-          'Testing',
-        // link: 'https://github.com/RyanFitzgerald/devfolio',
+        // name: 'Test',
+        // description:
+        //   'Testing',
+        // link: '/',
       },
       // {
       //   name: 'ChromeExtensionKit',
@@ -89,13 +89,13 @@ module.exports = {
         name: `blog`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/project`,
-        name: `project`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     path: `${__dirname}/content/project`,
+    //     name: `project`,
+    //   },
+    // },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
