@@ -43,8 +43,8 @@ export const pageQuery = graphql`
     }
     blogmd: allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      limit: 5
       filter: {fileAbsolutePath: {regex: "/content/blog/"  }}
+      limit: 1
     ) {
       edges {
         node {
@@ -62,7 +62,6 @@ export const pageQuery = graphql`
     }
     projmd: allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      limit: 5
       filter: {fileAbsolutePath: {regex: "/projectposts/"  }}
     ) {
       edges {

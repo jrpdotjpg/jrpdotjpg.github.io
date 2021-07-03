@@ -14,10 +14,13 @@ const classes = {
 
 const BlogPost = ({ data }) => {
   const post = data.markdownRemark;
-
+  const blogposts = data.blogmd.edges;
+  const projposts = data.projmd.edges;
+  const noBlog = !blogposts || !blogposts.length;
+  const noProj = !projposts || !projposts.length;
   return (
     <Layout>
-      <Header metadata={data.site.siteMetadata} />
+      <Header metadata={data.site.siteMetadata} noProj={noProj} noBlog={noBlog}/>
       <SEO title={post.frontmatter.title} />
       <h1 className={classes.title}>{post.frontmatter.title}</h1>
       <p className={classes.date}>
@@ -54,6 +57,44 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+      }
+    }
+    blogmd: allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: {fileAbsolutePath: {regex: "/content/blog/"  }}
+      limit: 1
+    ) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+          }
+        }
+      }
+    }
+    projmd: allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: {fileAbsolutePath: {regex: "/projectposts/"  }}
+      limit: 1
+    ) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+          }
+        }
       }
     }
   }
