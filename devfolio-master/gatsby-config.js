@@ -19,12 +19,12 @@ module.exports = {
     about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis porro cumque ea error ab voluptatem. Temporibus adipisci exercitationem similique itaque quibusdam laudantium, qui molestiae quas, aut amet animi id.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
-      // {
-      //   name: 'Devfolio',
-      //   description:
-      //     'A zero-config and blazing fast personal site + blog built with GatsbyJs and TailwindCSS',
-      //   link: 'https://github.com/RyanFitzgerald/devfolio',
-      // },
+      {
+        name: 'Devfolio',
+        description:
+          'A zero-config and blazing fast personal site + blog built with GatsbyJs and TailwindCSS',
+        link: 'https://github.com/RyanFitzgerald/devfolio',
+      },
       // {
       //   name: 'ChromeExtensionKit',
       //   description:
@@ -40,11 +40,11 @@ module.exports = {
     ],
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
-      // {
-      //   name: 'Acme Corp',
-      //   description: 'Full-Stack Developer, February 2020 - Present',
-      //   link: 'https://github.com/RyanFitzgerald/devfolio',
-      // },
+      {
+        name: 'Acme Corp',
+        description: 'Full-Stack Developer, February 2020 - Present',
+        link: 'https://github.com/RyanFitzgerald/devfolio',
+      },
       // {
       //   name: 'Globex Corp',
       //   description: 'Full-Stack Developer, December 2017 - February 2020',
@@ -86,14 +86,14 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
+        path: `${__dirname}/content/`,
         name: `blog`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/projectposts`,
+        path: `${__dirname}/content/`,
         name: `projectposts`,
       },
     },
