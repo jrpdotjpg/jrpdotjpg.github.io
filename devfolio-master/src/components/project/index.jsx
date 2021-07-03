@@ -1,4 +1,3 @@
-import { Link } from 'gatsby';
 import React from 'react';
 
 import Section from '../section';
@@ -6,7 +5,7 @@ import SummaryItem from '../summary-item';
 
 const ProjectPosts = ({ posts }) => {
   return (
-    <Section title="All Projects">
+    <Section title="All Blog Posts">
       {posts.map((post) => (
         <SummaryItem
           key={post.node.fields.slug}
