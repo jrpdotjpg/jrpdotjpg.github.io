@@ -2,13 +2,13 @@ module.exports = {
   pathPrefix: "/jrpdotjpg.github.io",
   siteMetadata: {
     // Site URL for when it goes live
-    siteUrl: `https://elastic-meninsky-aa7c74.netlify.app/`,
+    siteUrl: `https://jrpdotjpg.github.io/`,
     // Your Name
     name: 'Jonathan Paynter',
     // Main Site Title
     title: `Jonathan Paynter | Undergraduate Electronic and Information Engineer`,
     // Description that goes under your name in main bio
-    description: `I'll pass for now`,
+    description: `3rd year undergraduate Electronic and Information Engineer at Imperial College London.`,
     // Optional: Twitter account handle
     // author: `@rfitzio`,
     // Optional: Github account URL
@@ -16,7 +16,7 @@ module.exports = {
     // Optional: LinkedIn account URL
     // linkedin: `https://www.linkedin.com/in/ryanafitzgerald/`,
     // Content of the About Me section
-    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis porro cumque ea error ab voluptatem. Temporibus adipisci exercitationem similique itaque quibusdam laudantium, qui molestiae quas, aut amet animi id.`,
+    about: ``,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
@@ -41,9 +41,9 @@ module.exports = {
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
-        name: 'Acme Corp',
-        description: 'Full-Stack Developer, February 2020 - Present',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        name: 'ARM ',
+        description: 'Software Developer Intern, Python, Summer 2020',
+        // link: 'https://github.com/RyanFitzgerald/devfolio',
       },
       // {
       //   name: 'Globex Corp',
