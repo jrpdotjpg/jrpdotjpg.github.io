@@ -17,7 +17,7 @@ const classes = {
     'inline-block py-2 font-semibold text-xs text-gray-600 hover:text-black',
 };
 
-const Header = ({ metadata = {}, noBlog = false }) => {
+const Header = ({ metadata = {}, noBlog = false, noProj = false }) => {
   const twitter = get(metadata, 'author', false);
   const github = get(metadata, 'github', false);
   const linkedin = get(metadata, 'linkedin', false);
@@ -63,6 +63,13 @@ const Header = ({ metadata = {}, noBlog = false }) => {
             <li className={classes.item}>
               <Link className={classes.link} to="/blog">
                 Blog
+              </Link>
+            </li>
+          )}
+          {!noProj && (
+            <li className={classes.item}>
+              <Link className={classes.link} to="/projectposts">
+                Projects
               </Link>
             </li>
           )}

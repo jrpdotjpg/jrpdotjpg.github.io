@@ -9,7 +9,9 @@ import NotFound from '../pages/404';
 
 const Index = ({ data }) => {
   const posts = data.projmd.edges;
+  const blogposts = data.blogmd.edges;
   const noProjs = !posts || !posts.length;
+  const noBlogs = !blogposts || !blogposts.length;
 
   if (!posts || !posts.length) {
     return <NotFound />;
@@ -18,7 +20,7 @@ const Index = ({ data }) => {
   return (
     <Layout>
       <SEO title="Project Posts" />
-      <Header metadata={data.site.siteMetadata} />
+      <Header metadata={data.site.siteMetadata} noBlog={noBlogs} />
       {!noProjs && <ProjPosts posts={posts} />}
     </Layout>
   );
@@ -39,7 +41,30 @@ export const pageQuery = graphql`
         linkedin
       }
     }
-    projmd: allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    blogmd: allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 5
+      filter: {fileAbsolutePath: {regex: "/content/blog/"  }}
+    ) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+          }
+        }
+      }
+    }
+    projmd: allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 5
+      filter: {fileAbsolutePath: {regex: "/projectposts/"  }}
+    ) {
       edges {
         node {
           excerpt
