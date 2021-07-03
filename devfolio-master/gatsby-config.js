@@ -20,10 +20,10 @@ module.exports = {
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
-        name: 'Devfolio',
+        name: 'Tbd',
         description:
-          'A zero-config and blazing fast personal site + blog built with GatsbyJs and TailwindCSS',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+          'Hello, you\'ve arrived at my website mid-build! How fortunate! Check back later for updates',
+        // link: 'https://github.com/RyanFitzgerald/devfolio',
       },
       // {
       //   name: 'ChromeExtensionKit',
@@ -41,28 +41,28 @@ module.exports = {
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
-        name: 'ARM ',
-        description: 'Software Developer Intern, Python, Summer 2020',
-        // link: 'https://github.com/RyanFitzgerald/devfolio',
+        name: 'Research Placement at Imperial College',
+        description: 'Working to create a learnable Bayesian updating model for use in robotic manipulation. March 2020 - present',
       },
-      // {
-      //   name: 'Globex Corp',
-      //   description: 'Full-Stack Developer, December 2017 - February 2020',
-      //   link: 'https://github.com/RyanFitzgerald/devfolio',
-      // },
-      // {
-      //   name: 'Hooli',
-      //   description: 'Full-Stack Developer, May 2015 - December 2017',
-      //   link: 'https://github.com/RyanFitzgerald/devfolio',
-      // },
+      {
+        name: 'Mindsheet Ltd.',
+        description: 'Data Analytics Consultant - modelling natural language identifiers. ``TODO`` 2020 (1 week)',
+        // link:
+      },
+      {
+        name: 'ARM ',
+        description: 'Software Engineering Intern, Python. Summer 2020 (3 months)',
+        // link:
+      },
+    
     ],
     // Optional: List your skills, they must have `name` and `description`.
     skills: [
-      // {
-      //   name: 'Languages & Frameworks',
-      //   description:
-      //     'JavaScript (ES6+), Golang, Node.js, Express.js, React, Ruby on Rails, PHP',
-      // },
+      {
+        name: 'Languages and Frameworks',
+        description:
+          'Python (PyTorch, Tensorflow), C++, Prolog, SQL, LabVIEW',
+      },
       // {
       //   name: 'Databases',
       //   description: 'MongoDB, PostreSQL, MySQL',
