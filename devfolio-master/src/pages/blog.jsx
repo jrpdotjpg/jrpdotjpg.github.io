@@ -8,7 +8,7 @@ import SEO from '../components/seo';
 import NotFound from '../pages/404';
 
 const Index = ({ data }) => {
-  const posts = data.allMarkdownRemark.edges;
+  const posts = data.blogmd.edges;
   const noBlog = !posts || !posts.length;
 
   if (!posts || !posts.length) {
@@ -39,7 +39,7 @@ export const pageQuery = graphql`
         linkedin
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    blogmd: allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           excerpt

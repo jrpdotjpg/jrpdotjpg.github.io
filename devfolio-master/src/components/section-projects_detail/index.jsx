@@ -4,10 +4,10 @@ import React from 'react';
 import Section from '../section';
 import SummaryItem from '../summary-item';
 
-const SectionProjMore = ({ posts }) => {
+const SectionProjMore = ({ projects }) => {
   return (
-    <Section title="Latest Posts">
-      {posts.map((post) => (
+    <Section title="Project Posts">
+      {projects.map((post) => (
         <SummaryItem
           key={post.node.fields.slug}
           name={post.node.frontmatter.title}
@@ -16,7 +16,7 @@ const SectionProjMore = ({ posts }) => {
           internal
         />
       ))}
-      {posts.length >= 5 && (
+      {projects.length >= 5 && (
         <Link className="text-gray-500 text-sm hover:text-black" to="/project">
           View more projects &rarr;
         </Link>

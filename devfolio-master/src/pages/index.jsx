@@ -9,15 +9,18 @@ import SectionBlog from '../components/section-blog';
 import SectionExperience from '../components/section-experience';
 import SectionProjects from '../components/section-projects';
 import SectionSkills from '../components/section-skills';
+import SectionProjMore from '../components/section-projects_detail';
 import SEO from '../components/seo';
 
 const Index = ({ data }) => {
   const about = get(data, 'site.siteMetadata.about', false);
   const projects = get(data, 'site.siteMetadata.projects', false);
-  const posts = data.allMarkdownRemark.edges;
+  const blogposts = data.blogmd.edges;
+  const projposts = data.projmd.edges;
   const experience = get(data, 'site.siteMetadata.experience', false);
   const skills = get(data, 'site.siteMetadata.skills', false);
-  const noBlog = !posts || !posts.length;
+  const noBlog = !blogposts || !blogposts.length;
+  const noProj = !projposts || !projposts.length;
 
   return (
     <Layout>
@@ -25,8 +28,8 @@ const Index = ({ data }) => {
       <Header metadata={data.site.siteMetadata} noBlog={noBlog} />
       {about && <SectionAbout about={about} />}
       {projects && projects.length && <SectionProjects projects={projects} />}
-      {!noBlog && <SectionBlog posts={posts} />}
-      {!noBlog && <SectionProjects projects={posts} />}
+      {!noBlog && <SectionBlog posts={blogposts} />}
+      {!noProj && <SectionProjMore projects={projposts} />}
       {experience && experience.length && (
         <SectionExperience experience={experience} />
       )}
@@ -64,9 +67,29 @@ export const pageQuery = graphql`
         }
       }
     }
-    allMarkdownRemark(
+    blogmd: allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       limit: 5
+      filter: {fileAbsolutePath: {regex: "/(blog)/"  }}
+    ) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+          }
+        }
+      }
+    }
+    projmd: allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 5
+      filter: {fileAbsolutePath: {regex: "/(projectposts)/"  }}
     ) {
       edges {
         node {

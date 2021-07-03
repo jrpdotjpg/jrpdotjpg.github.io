@@ -1,15 +1,15 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 
-import BlogPosts from '../components/project-posts';
+import ProjPosts from '../components/project-posts';
 import Header from '../components/header';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import NotFound from '../pages/404';
 
 const Index = ({ data }) => {
-  const posts = data.allMarkdownRemark.edges;
-  const noBlog = !posts || !posts.length;
+  const posts = data.projmd.edges;
+  const noProjs = !posts || !posts.length;
 
   if (!posts || !posts.length) {
     return <NotFound />;
@@ -19,7 +19,7 @@ const Index = ({ data }) => {
     <Layout>
       <SEO title="Project Posts" />
       <Header metadata={data.site.siteMetadata} />
-      {!noBlog && <BlogPosts posts={posts} />}
+      {!noProjs && <ProjPosts posts={posts} />}
     </Layout>
   );
 };
@@ -39,7 +39,7 @@ export const pageQuery = graphql`
         linkedin
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    projmd: allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           excerpt
