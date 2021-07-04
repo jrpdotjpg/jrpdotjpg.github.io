@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jonathan Paynter | Undergraduate Electronic and Information Engineer]]></title><description><![CDATA[3rd year undergraduate Electronic and Information Engineer at Imperial College London.]]></description><link>https://jrpdotjpg.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 04 Jul 2021 14:27:43 GMT</lastBuildDate><item><title><![CDATA[Robot Localisation]]></title><description><![CDATA[As part of a Robotics course, we built simulated robots in small teams that could accurately trace a route around a map, using predefined…]]></description><link>https://jrpdotjpg.github.io/projectposts/Robotics-Course/</link><guid isPermaLink="false">https://jrpdotjpg.github.io/projectposts/Robotics-Course/</guid><pubDate>Tue, 02 Mar 2021 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;As part of a Robotics course, we built simulated robots in small teams that could accurately trace a route around a map, using predefined waypoints.
+The robot, scripted in Lua within CoppeliaSim, used Monte Carlo localisation to iteratively gauge the likelihood of particles given sensor readings, resampling using this likelihood, and moving the particles based on odometry.&lt;/p&gt;
+&lt;p&gt;This was my first experience with Robotics and has inspired me to pursue it in the upcoming year, particular in combination with Machine Learning and potentially self-driving cars.
+I have an amateur interest in transport engineering and, although the outcomes of autonomous vehicles are mixed in terms of benefits to safety against the potential to decrease public transport use, I am certainly interested at least in being in the conversation.&lt;/p&gt;
+&lt;p&gt;Whilst the simulated environment was necessary due to remote learning, it was useful to gain experience in it especially as the use of digital doubles and simulated learning and development environments increases.&lt;/p&gt;
+&lt;p&gt;Below you can see one of our robots in action. Intersecting walls, particles and estimated last waypoint position are all highlighted.
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin: 0 0 30px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/fa08579573e2d412644663bf6ec220de/20f89/RobotPic.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 58.10810810810811%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAABJ0AAASdAHeZh94AAACD0lEQVQozy2QSY4UMRBF8xKIC3Au2HIGWHETJLq6Kuf0PI9pO6uqWQDdByIKIVm2FfaPeP936nhT18eSxxtvr6L90cev0H7utR3HUcrurcop1dZ83M3+Iutv0V7lP1U3iHJm+4XnWRXha8y11Hoc7Xa7Xa9HcsJpBjdvpFU8xeBDYjaPIp9Z7r4PfKZW+7SXcrSH5n6/t1a9lVoSJ5Fic/acrc8C90FTpwW0cD4SYbsH3X/Ny/V2yzkqgYOTtaTWDu+DZMjJLXhZa7ESk+XkNYle5xS7koN3Juc9OAWQls+ar9fbve5pdyw4AaTemgLuk4MuAg9JE0NmuvQd287QyVkryOTFKsngFDJ0nsbLSLUhF4bORrEQgpXc8U3TOTsGO56eOjiSIZoj751VFM9P0RCLenT6sdmoyMjxkC11RpbaAI0uz4bP8IeTqYMHgUYYGC0DvQbDCgGbpX1UK8e9okPy5grRt2oloutZs8lLBKRd0ATPJye2+Ji/OueC03g5GbFCyFasexAQvrPS8KUEYeUG2C0r+NBRsjm5ADlMY9vFKQz2lKBWLIatfOtBI9kCIUvce4EkHqESDKHbufv46XPJfvcceKDakgQWa03LNlmI4BQNrpFDziXwa9aQEV2fIeOcfPfu/YcvX795Q/HypOlk6AL+OR4VWxnqoT3YCwpLOkVLW1Ic9QwNx1GVNn8B5v0Ha3yHhsAAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;One of our robots in action. Intersecting walls, particles and estimated last position are all highlighted.&quot;
+        title=&quot;One of our robots in action. Intersecting walls, particles and estimated last position are all highlighted.&quot;
+        src=&quot;/static/fa08579573e2d412644663bf6ec220de/fcda8/RobotPic.png&quot;
+        srcset=&quot;/static/fa08579573e2d412644663bf6ec220de/12f09/RobotPic.png 148w,
+/static/fa08579573e2d412644663bf6ec220de/e4a3f/RobotPic.png 295w,
+/static/fa08579573e2d412644663bf6ec220de/fcda8/RobotPic.png 590w,
+/static/fa08579573e2d412644663bf6ec220de/efc66/RobotPic.png 885w,
+/static/fa08579573e2d412644663bf6ec220de/c83ae/RobotPic.png 1180w,
+/static/fa08579573e2d412644663bf6ec220de/20f89/RobotPic.png 1213w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[The Use of AI and Robotics in Criminal Justice]]></title><description><![CDATA[As part of an extracurricular course on ‘Conflict, Crime and Justice’ I researched the potential implications of AI in the criminal justice…]]></description><link>https://jrpdotjpg.github.io/projectposts/AI-Criminal-Justice/</link><guid isPermaLink="false">https://jrpdotjpg.github.io/projectposts/AI-Criminal-Justice/</guid><pubDate>Sun, 14 Feb 2021 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;As part of an extracurricular course on ‘Conflict, Crime and Justice’ I researched the potential implications of AI in the criminal justice system.&lt;sup id=&quot;fnref-1&quot;&gt;&lt;a href=&quot;#fn-1&quot; class=&quot;footnote-ref&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;
+It is all too common to see new and promising inventions causing harmful outcomes, and often with AI this is due to a lack of care and diligence in its implementation and restriction.
+Having experienced within university a largely neutral standpoint on engineering and its applications it was refreshing to explore the ever-growing moral and ethical issues created with modern AI, besides the frequent panic-laden stories in the news.&lt;/p&gt;
+&lt;p&gt;My findings revolved around uncertainty and the ability to express, or at least find it, in a model.
+It is important for AI systems, used in situations where their decision is weighed as a factor, that their outputs be qualified by a level of confidence.
+Many practitioners have assumed that classical training schemes naturally calibrate models that embed a calibrated measure of confidence in their output, but recent focused research has shown this to not be the case.
+If models are to be useful in courtroom decisions, then these outputs must be able to reliably self-assess.&lt;/p&gt;
+&lt;p&gt;The lie detector was originally drawn into the courtroom as a means of providing unbiased opinions,&lt;sup id=&quot;fnref-2&quot;&gt;&lt;a href=&quot;#fn-2&quot; class=&quot;footnote-ref&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; and whilst its objectiveness was questioned and its use as a evidence ultimately invalidated, the same has not happened to many of the - often hand-tuned - algorithms that play a role in determining guilt or risk of defendants and convicts.
+These are no less subjective than their creators design them to be, but this is hidden behind their apparent machine impartiality.
+More complex algorithms are making their way into predictive policing strategies, making it ever more important that their limitations are thoroughly understood.&lt;/p&gt;
+&lt;p&gt;I believe that all AI practitioners should be more aware of their models’ potential societal impacts, and look forward to following the debate as AI develops further.&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn-1&quot;&gt;
+&lt;p&gt;It is not yet possible to post the paper in full.&lt;/p&gt;
+&lt;a href=&quot;#fnref-1&quot; class=&quot;footnote-backref&quot;&gt;↩&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn-2&quot;&gt;
+&lt;p&gt;Roth, A. (2016). Trial by machine. Georgetown Law Journal, 104(5), 1245–1305.&lt;/p&gt;
+&lt;a href=&quot;#fnref-2&quot; class=&quot;footnote-backref&quot;&gt;↩&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Logic Programming and Machine Learning]]></title><link>https://jrpdotjpg.github.io/projectposts/AI-so-far/</link><guid isPermaLink="false">https://jrpdotjpg.github.io/projectposts/AI-so-far/</guid><pubDate>Sun, 14 Feb 2021 12:00:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Internship at ARM]]></title><description><![CDATA[I spent three months as an intern at ARM where I worked on open-source code providing benchmarking tools for largely mobile devices…]]></description><link>https://jrpdotjpg.github.io/projectposts/Arm-Internship/</link><guid isPermaLink="false">https://jrpdotjpg.github.io/projectposts/Arm-Internship/</guid><pubDate>Mon, 22 Jun 2020 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I spent three months as an intern at ARM where I worked on open-source code providing benchmarking tools for largely mobile devices.
+Although I had used Python before, it was not in any comprehensive manner, so the placement provided me a solid experience to learn and solidify core concepts in Python that has proven itself to be useful many times over, especially in streamlining work done since in Machine Learning.&lt;/p&gt;
+&lt;p&gt;The placement was remote and motivated the practice of useful communicative skills accordingly, centered on clear and explicit text correspondence.
+Similarly, I learned the proper management of Git logs and the creation concise and useful GitHub commit messages.&lt;/p&gt;
+&lt;p&gt;The repositories&lt;sup id=&quot;fnref-1&quot;&gt;&lt;a href=&quot;#fn-1&quot; class=&quot;footnote-ref&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; were large and well established, so it was important to quickly understand initially the broader strokes of the architecture, especially as I began to implement changes that at first seemed to allow multiple possible realisations.
+Communicating with the users of the software was essential to understand the key use cases and inform on the best solutions, whilst providing data to prove their suitability and performance.&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn-1&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/ARM-software/workload-automation&quot;&gt;Workload automation&lt;/a&gt; and &lt;a href=&quot;https://github.com/ARM-software/devlib&quot;&gt;Devlib&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;#fnref-1&quot; class=&quot;footnote-backref&quot;&gt;↩&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Track and Trace System Architecture Design]]></title><link>https://jrpdotjpg.github.io/projectposts/track-and-trace/</link><guid isPermaLink="false">https://jrpdotjpg.github.io/projectposts/track-and-trace/</guid><pubDate>Sat, 20 Jun 2020 12:00:00 GMT</pubDate><content:encoded></content:encoded></item></channel></rss>
