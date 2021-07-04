@@ -30,7 +30,7 @@ module.exports = {
       },
       {
         name: 'C Compiler',
-        description: 'A (subset) C compiler to MIPS 1',
+        description: 'A C (subset) compiler to MIPS 1',
         link: 'https://github.com/ALGCDG/WeRateDAGs'
       },
       {
