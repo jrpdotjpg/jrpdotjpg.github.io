@@ -17,7 +17,7 @@ const SectionProjMore = ({ projects }) => {
         />
       ))}
       {projects.length >= 5 && (
-        <Link className="text-gray-500 text-sm hover:text-black" to="/project">
+        <Link className="text-gray-500 text-sm hover:text-black" to="/projectposts">
           View more &rarr;
         </Link>
       )}
