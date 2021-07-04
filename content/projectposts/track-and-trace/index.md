@@ -14,4 +14,21 @@ Within the team I took special notice of existing whitepapers and attempted to c
 - Minimal (hashed phone number) personal data in remote storage
 
 For example, see the system context, architecture overview and component diagrams respectively below.
-![System context diagram]('System Context Diagram.png') ![Architecture overview diagram]('Architecture Overview Diagram.png') ![Component diagram]('Component Diagram.png')
+
+<div style = "display: flex; justify-content: center;">
+  <div style = "width: 250px; 
+  margin: 0 1rem;
+    margin-bottom : 1.5rem;">
+      <img style = "display: inline-block" src = "./SystemContextDiagram.png">
+  </div>
+  <div style = "width: 250px; 
+  margin: 0 1rem;
+    margin-bottom : 1.5rem;">
+      <img style = "display: inline-block" src = "./ArchitectureOverviewDiagram.png">
+  </div>
+  <div style = "width: 250px; 
+  margin: 0 1rem;
+    margin-bottom : 1.5rem;">
+      <img style = "display: inline-block" src = "./ComponentDiagram.png">
+  </div>  
+</div>

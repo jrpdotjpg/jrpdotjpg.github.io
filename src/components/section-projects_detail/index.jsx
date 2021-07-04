@@ -6,7 +6,7 @@ import SummaryItem from '../summary-item';
 
 const SectionProjMore = ({ projects }) => {
   return (
-    <Section title="More Detail">
+    <Section title="Projects/Posts">
       {projects.map((post) => (
         <SummaryItem
           key={post.node.fields.slug}
@@ -16,7 +16,7 @@ const SectionProjMore = ({ projects }) => {
           internal
         />
       ))}
-      {projects.length >= 5 && (
+      {projects.length > 5 && (
         <Link className="text-gray-500 text-sm hover:text-black" to="/projectposts">
           View more &rarr;
         </Link>

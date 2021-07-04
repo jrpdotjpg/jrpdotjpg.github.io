@@ -8,25 +8,15 @@ module.exports = {
     // Main Site Title
     title: `Jonathan Paynter | Undergraduate Electronic and Information Engineer`,
     // Description that goes under your name in main bio
-    description: `3rd year undergraduate Electronic and Information Engineer at Imperial College London.`,
+    description: `4th year undergraduate Electronic and Information Engineer at Imperial College London.`,
     // Optional: Twitter account handle
-    // author: `@rfitzio`,
-    // Optional: Github account URL
+    // author: ``,
     github: `https://github.com/jrpdotjpg`,
-    // Optional: LinkedIn account URL
-    // linkedin: `https://www.linkedin.com/in/ryanafitzgerald/`,
-    // Content of the About Me section
-    about: `I'm a 3rd-going-on-4th year undergraduate student studying Electronic and Information Engineering.
-              Pre-lockdown my interests were hiking, running, climbing and swimming, something I hope to resume shortly.
+    linkedin: `www.linkedin.com/in/jonathanpaynter/`,
+    about: `I am a 4th year undergraduate student studying Electronic and Information Engineering.
+              Pre-lockdown my interests were hiking, running, climbing and swimming, all I hope to resume shortly.
               I am interested in all elements of AI, but specifically I'd like to continue in reinforcement learning, and AI in social science.`,
-    // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
-      // {
-      //   name: 'Tbd',
-      //   description:
-      //     'Hello, you\'ve arrived at my website mid-build! How fortunate! Check back later for updates',
-      //   // link: 'https://github.com/RyanFitzgerald/devfolio',
-      // },
       {
         name: 'Fake News Detector web app',
         description:
@@ -52,14 +42,7 @@ module.exports = {
         description:
           'Solving the game of "Mastermind" up to code lengths of 15 using an adaptive combination of a particle swarm algorithm, a genetic algorithm and minimax, depending on length.',
       },
-      // {
-      //   name: 'Another Cool Project',
-      //   description:
-      //     'Lorem ipsum dolor sit amet consectetur adipisicing elit ducimus perferendis',
-      //   link: 'https://github.com/RyanFitzgerald/devfolio',
-      // },
     ],
-    // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
         name: 'Research Placement at Imperial College',
@@ -77,22 +60,12 @@ module.exports = {
       },
     
     ],
-    // Optional: List your skills, they must have `name` and `description`.
     skills: [
       {
         name: 'Languages and Frameworks',
         description:
           'Python (PyTorch, Tensorflow), C++, Prolog, SQL, LabVIEW',
       },
-      // {
-      //   name: 'Databases',
-      //   description: 'MongoDB, PostreSQL, MySQL',
-      // },
-      // {
-      //   name: 'Other',
-      //   description:
-      //     'Docker, Amazon Web Services (AWS), CI / CD, Microservices, API design, Agile / Scrum',
-      // },
     ],
   },
   plugins: [

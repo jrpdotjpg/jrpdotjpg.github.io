@@ -79,7 +79,7 @@ const Header = ({ metadata = {}, noBlog = false, noProj = false }) => {
           {
             <li className={classes.item}>
               <Link className={classes.link} href={withPrefix('/CV.pdf')} download>
-                There's more?! (Download CV)
+                CV
               </Link>
             </li>
           }
