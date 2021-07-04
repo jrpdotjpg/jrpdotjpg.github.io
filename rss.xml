@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jonathan Paynter | Undergraduate Electronic and Information Engineer]]></title><description><![CDATA[3rd year undergraduate Electronic and Information Engineer at Imperial College London.]]></description><link>https://jrpdotjpg.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 04 Jul 2021 15:44:32 GMT</lastBuildDate><item><title><![CDATA[Robot Localisation]]></title><description><![CDATA[As part of a Robotics course, we built simulated robots in small teams that could accurately trace a route around a map, using predefined…]]></description><link>https://jrpdotjpg.github.io/projectposts/Robotics-Course/</link><guid isPermaLink="false">https://jrpdotjpg.github.io/projectposts/Robotics-Course/</guid><pubDate>Tue, 02 Mar 2021 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;As part of a Robotics course, we built simulated robots in small teams that could accurately trace a route around a map, using predefined waypoints.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jonathan Paynter | Undergraduate Electronic and Information Engineer]]></title><description><![CDATA[3rd year undergraduate Electronic and Information Engineer at Imperial College London.]]></description><link>https://jrpdotjpg.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 04 Jul 2021 15:46:28 GMT</lastBuildDate><item><title><![CDATA[Robot Localisation]]></title><description><![CDATA[As part of a Robotics course, we built simulated robots in small teams that could accurately trace a route around a map, using predefined…]]></description><link>https://jrpdotjpg.github.io/projectposts/Robotics-Course/</link><guid isPermaLink="false">https://jrpdotjpg.github.io/projectposts/Robotics-Course/</guid><pubDate>Tue, 02 Mar 2021 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;As part of a Robotics course, we built simulated robots in small teams that could accurately trace a route around a map, using predefined waypoints.
 The robot, scripted in Lua within CoppeliaSim, used Monte Carlo localisation to iteratively gauge the likelihood of particles given sensor readings, resampling using this likelihood, and moving the particles based on odometry.&lt;/p&gt;
 &lt;p&gt;This was my first experience with Robotics and has inspired me to pursue it in the upcoming year, particular in combination with Machine Learning and potentially self-driving cars.
 I have an amateur interest in transport engineering and, although the outcomes of autonomous vehicles are mixed in terms of benefits to safety against the potential to decrease public transport use, I am certainly interested at least in being in the conversation.&lt;/p&gt;
@@ -82,114 +82,19 @@ Within the team I took special notice of existing whitepapers and attempted to c
 &lt;li&gt;Minimal (hashed phone number) personal data in remote storage&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;For example, see the system context, architecture overview and component diagrams respectively below.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin: 0 0 30px;&quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/1016c8fef39820a1203529a32fce470c/f1841/SystemContextDiagram.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 61.48648648648649%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAC4jAAAuIwF4pT92AAABwElEQVQoz21Sf0/UQBDlW5OAwhmNinocQaOJ8hcJ4S++g59AwxnFcBBN8LheS7u7bfdXd3aX1614Gpw0zc7svHlvZ2aN13V+cSmKwodgra3rum1bKaVzzhjDOTfJlFIxxpDMe+QGuGtVVc5ml1dXvwADOE8GDFyFGm2LXGtNk9yyLIuiWCwWIOjBKEMhOCIg4WutcYEzgpa8JtLkrQ/SkZAKcUgYkD043hloIG+5XDLGUEL+uNDfTsX0U/v1tJud6bMpm352XReS+H/ABAatO2ugUytlnbPHB+HZetjdjrvbYbwVXmzQm6dGyv+A0R4uxOKGSanwKpzl0fv4cjPuPXJATkZxvOXf7ZT5smIMBGgKxN8xO1e38uOXn0XFhOBSa3N8EHc24mSUyEfx1QP/9rkzGqRoU9d14PsNhoM/mtE0DfT3LTw5DOOH4fWTsP8Yn5+M/Iexsyal35M9dHIoAeWuFsQrx8o2u7ZlIbNrmWcQGP+yFTPaMPxRBe8BOUFhCMrY/oqI1w1eez6/yRkODUazAg+asQYiGWaWZRkiRqP9EpF+t8h9n7M5Ung/ztWcgae0Kv3aEP3ZwWEFAI737BaoFJ8Rmjp/lwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;System context diagram&quot;
-        title=&quot;System context diagram&quot;
-        src=&quot;/static/1016c8fef39820a1203529a32fce470c/fcda8/SystemContextDiagram.png&quot;
-        srcset=&quot;/static/1016c8fef39820a1203529a32fce470c/12f09/SystemContextDiagram.png 148w,
-/static/1016c8fef39820a1203529a32fce470c/e4a3f/SystemContextDiagram.png 295w,
-/static/1016c8fef39820a1203529a32fce470c/fcda8/SystemContextDiagram.png 590w,
-/static/1016c8fef39820a1203529a32fce470c/efc66/SystemContextDiagram.png 885w,
-/static/1016c8fef39820a1203529a32fce470c/c83ae/SystemContextDiagram.png 1180w,
-/static/1016c8fef39820a1203529a32fce470c/f1841/SystemContextDiagram.png 4016w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt; &lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin: 0 0 30px;&quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/0d04244abaa55300743b8c84aa1f5d5f/a4a8f/ArchitectureOverviewDiagram.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 68.91891891891892%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAC4jAAAuIwF4pT92AAADD0lEQVQoz2WT208TQRTG+08Z3/XF+KCJRkTjJWrwGk00SrCJphFBEGsFyqViLRRBWhC0hbot7doCvW9bQRRspaUXeoHdbbvbdmdny64DxCe/nIczJ/md72TmjIyiqML2domiWKoIBYHjOAiAJIqSKCEBwKWTyWqlgqLCsDRJlmhagDCfzaKKrFAoVGs8XyWzGwscJxTZcore2SrRuXIpXy4l8rlFIriRy24VqS1yx7+yHP69ltjO434vspTlcjnUt8jQ3uUlZPWLzPS4W7XEW7Xf1ukydS3OKt1zKi/2ym1pjzi6iHm1z6pyzw16LFXIywr5fIlhmB0qHowg+Od2pgPTqZ3GFofxhtVwC/t43ay/Zhm9OdJjlj9Wvm47MzV4alQl/6zlBCjjeR5wgGXYIkWDajWSTg5746PelXufhhpGei5M9F2d0l82G68PdH1vbFI/URyZGTpseNds0vPIWdoXB2pQgKCC4E21Y2nItdj0Xik3znTYPI+sPc8WVGfHh87rWh6M3T+hV8oN99pNAwjYgzfp1f7AnXAGlwQpkk0ov5k0Huvd6ZEOe+CNlXhkbm/DFSdHtV3jV5zTR0/rFN+nD72dfclAcQ9mIR1MYykyJtWlUDquclq0Ie9rT+9DS+s5fV+TaezSZ0PjcO8xnfLk5OR5o6Fh4r38yzAQ9sfmAYxHU+USu3dhZK7fh/ct2NvxFy3zbY16ze1PA74vx5/oH5/RdJs+nu00Prs4M6mwTdQOYLQnmBVLpdMoX8mndav+D6uBTtzZbMVufx1/8HVk2nzjqbn71tyYc7ZBNdd6zT7z3DVVhWB/bIaNRWMkRdYBH8ok+gnXu7Bb6w9qg14NYR8M4a8IT1/YpQk7ukNLvT77QNA2HHGxCBZFsVKrVcVdlquhlUwxRSyxjqdj2MaP+c01RyqG4lsqiiejjmTMkYzOri3bEusLmXgNvTNyhtGNcrMC+IhdSapDWIeCtCsKPER9pX86yCssSwQCFEkeVPbhP/HKc2UtGBZQzu8JQvRHBOk/IQAAUK/XD45/AWnNmxc7KtE3AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Architecture overview diagram&quot;
-        title=&quot;Architecture overview diagram&quot;
-        src=&quot;/static/0d04244abaa55300743b8c84aa1f5d5f/fcda8/ArchitectureOverviewDiagram.png&quot;
-        srcset=&quot;/static/0d04244abaa55300743b8c84aa1f5d5f/12f09/ArchitectureOverviewDiagram.png 148w,
-/static/0d04244abaa55300743b8c84aa1f5d5f/e4a3f/ArchitectureOverviewDiagram.png 295w,
-/static/0d04244abaa55300743b8c84aa1f5d5f/fcda8/ArchitectureOverviewDiagram.png 590w,
-/static/0d04244abaa55300743b8c84aa1f5d5f/efc66/ArchitectureOverviewDiagram.png 885w,
-/static/0d04244abaa55300743b8c84aa1f5d5f/c83ae/ArchitectureOverviewDiagram.png 1180w,
-/static/0d04244abaa55300743b8c84aa1f5d5f/a4a8f/ArchitectureOverviewDiagram.png 3563w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin: 0 0 30px;&quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/0b46168791d3f5270e06665e8b24fc82/adfb4/ComponentDiagram.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 77.02702702702703%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAC4jAAAuIwF4pT92AAACl0lEQVQoz02SiW7bOBCG/f5PtHDSJqtsmvqSZR2O47i6JZKiSIrUfZdyC2SJATEk+OH/Z4YrLgTDaS7ENE3zNBdN7WaplxGHpZ8odhj2BPGy1CXJckmxjaFMUMHHcVwlGIMoEnd4HAbe1nroegiYBOhprKHwEHtq7NphoEfewb0FEFxcG2a0H4ZV27ZVVXEuHYicC1rmeuzrvmMkkYFjEwYGDE8g0CLPxPElwxea6DD0OJHgahiGvu/LsizKQnCecGaEngvifeD8dK63wL/EgRNHFgiOgWMSeKboCANP0Iyx1Xxfi+dxbJsmqysdRSaOtu5N8hrwN/ZVYufQc0C0D2yLQFmIzbCs8Qse7h5IkR8i7wh8NfZ3gaOi0PK9G4wNDKTmefEcfYZ+JNhSs8Sk+/6+ZN71nahEXhd5U4pahqAEUYJ5XfBKAAxgiqIoRhjLxwtMKZU967tunOcmgy14nbPdzLYtVES0J/6eOuv0tgaXNfp8ovZD6Bgc3Ma+XWxLOM/zuq6lOKMso1FLlSZ9rpMHaZYkbgEeRq7wRCXoQ8Rr/9eGg/cyF4vynznJVhdFQQnlDDSpUqIn+S5De440Fq49+wQchfr/1Mmzb6scXjkjCyzndB91RmgmEreMn7pUGehLET2OVOnw9yJ+LNGGed9K8NinShJoOfr4a/tPt7uubWS7MBy0l+74Upx+UP+j1l4bme+fR+O/+vhvr792p9fJeGvP6vD/UTVNI8+CMebYnbrJd2/8bHa7t8TU4dmiynffsshhG+qn6mINll5V9V944cdxmueWksbSJn03adtJ/Tlr2844dOZxOG5auet7eNwVp934rgsuvmCpvmyUzKfdbKpfYRyWWBJ10vfp7dpc36Wy/JG/ATbhMsDVGpPDAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Component diagram&quot;
-        title=&quot;Component diagram&quot;
-        src=&quot;/static/0b46168791d3f5270e06665e8b24fc82/fcda8/ComponentDiagram.png&quot;
-        srcset=&quot;/static/0b46168791d3f5270e06665e8b24fc82/12f09/ComponentDiagram.png 148w,
-/static/0b46168791d3f5270e06665e8b24fc82/e4a3f/ComponentDiagram.png 295w,
-/static/0b46168791d3f5270e06665e8b24fc82/fcda8/ComponentDiagram.png 590w,
-/static/0b46168791d3f5270e06665e8b24fc82/efc66/ComponentDiagram.png 885w,
-/static/0b46168791d3f5270e06665e8b24fc82/c83ae/ComponentDiagram.png 1180w,
-/static/0b46168791d3f5270e06665e8b24fc82/adfb4/ComponentDiagram.png 4562w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
 &lt;div style=&quot;display: flex; justify-content: center;&quot;&gt;
   &lt;div style=&quot;width: 250px; 
   margin: 0 1rem;
     margin-bottom : 1.5rem;&quot;&gt;
       &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin: 0 0 30px;&quot;&gt;
-      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/0b46168791d3f5270e06665e8b24fc82/adfb4/ComponentDiagram.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
-    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 77.02702702702703%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAC4jAAAuIwF4pT92AAACl0lEQVQoz02SiW7bOBCG/f5PtHDSJqtsmvqSZR2O47i6JZKiSIrUfZdyC2SJATEk+OH/Z4YrLgTDaS7ENE3zNBdN7WaplxGHpZ8odhj2BPGy1CXJckmxjaFMUMHHcVwlGIMoEnd4HAbe1nroegiYBOhprKHwEHtq7NphoEfewb0FEFxcG2a0H4ZV27ZVVXEuHYicC1rmeuzrvmMkkYFjEwYGDE8g0CLPxPElwxea6DD0OJHgahiGvu/LsizKQnCecGaEngvifeD8dK63wL/EgRNHFgiOgWMSeKboCANP0Iyx1Xxfi+dxbJsmqysdRSaOtu5N8hrwN/ZVYufQc0C0D2yLQFmIzbCs8Qse7h5IkR8i7wh8NfZ3gaOi0PK9G4wNDKTmefEcfYZ+JNhSs8Sk+/6+ZN71nahEXhd5U4pahqAEUYJ5XfBKAAxgiqIoRhjLxwtMKZU967tunOcmgy14nbPdzLYtVES0J/6eOuv0tgaXNfp8ovZD6Bgc3Ma+XWxLOM/zuq6lOKMso1FLlSZ9rpMHaZYkbgEeRq7wRCXoQ8Rr/9eGg/cyF4vynznJVhdFQQnlDDSpUqIn+S5De440Fq49+wQchfr/1Mmzb6scXjkjCyzndB91RmgmEreMn7pUGehLET2OVOnw9yJ+LNGGed9K8NinShJoOfr4a/tPt7uubWS7MBy0l+74Upx+UP+j1l4bme+fR+O/+vhvr792p9fJeGvP6vD/UTVNI8+CMebYnbrJd2/8bHa7t8TU4dmiynffsshhG+qn6mINll5V9V944cdxmueWksbSJn03adtJ/Tlr2844dOZxOG5auet7eNwVp934rgsuvmCpvmyUzKfdbKpfYRyWWBJ10vfp7dpc36Wy/JG/ATbhMsDVGpPDAAAAAElFTkSuQmCC&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
-  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;ComponentDiagram&quot; title=&quot;ComponentDiagram&quot; src=&quot;/static/0b46168791d3f5270e06665e8b24fc82/fcda8/ComponentDiagram.png&quot; srcset=&quot;/static/0b46168791d3f5270e06665e8b24fc82/12f09/ComponentDiagram.png 148w,
-/static/0b46168791d3f5270e06665e8b24fc82/e4a3f/ComponentDiagram.png 295w,
-/static/0b46168791d3f5270e06665e8b24fc82/fcda8/ComponentDiagram.png 590w,
-/static/0b46168791d3f5270e06665e8b24fc82/efc66/ComponentDiagram.png 885w,
-/static/0b46168791d3f5270e06665e8b24fc82/c83ae/ComponentDiagram.png 1180w,
-/static/0b46168791d3f5270e06665e8b24fc82/adfb4/ComponentDiagram.png 4562w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/1016c8fef39820a1203529a32fce470c/f1841/SystemContextDiagram.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 61.48648648648649%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAC4jAAAuIwF4pT92AAABwElEQVQoz21Sf0/UQBDlW5OAwhmNinocQaOJ8hcJ4S++g59AwxnFcBBN8LheS7u7bfdXd3aX1614Gpw0zc7svHlvZ2aN13V+cSmKwodgra3rum1bKaVzzhjDOTfJlFIxxpDMe+QGuGtVVc5ml1dXvwADOE8GDFyFGm2LXGtNk9yyLIuiWCwWIOjBKEMhOCIg4WutcYEzgpa8JtLkrQ/SkZAKcUgYkD043hloIG+5XDLGUEL+uNDfTsX0U/v1tJud6bMpm352XReS+H/ABAatO2ugUytlnbPHB+HZetjdjrvbYbwVXmzQm6dGyv+A0R4uxOKGSanwKpzl0fv4cjPuPXJATkZxvOXf7ZT5smIMBGgKxN8xO1e38uOXn0XFhOBSa3N8EHc24mSUyEfx1QP/9rkzGqRoU9d14PsNhoM/mtE0DfT3LTw5DOOH4fWTsP8Yn5+M/Iexsyal35M9dHIoAeWuFsQrx8o2u7ZlIbNrmWcQGP+yFTPaMPxRBe8BOUFhCMrY/oqI1w1eez6/yRkODUazAg+asQYiGWaWZRkiRqP9EpF+t8h9n7M5Ung/ztWcgae0Kv3aEP3ZwWEFAI737BaoFJ8Rmjp/lwAAAABJRU5ErkJggg==&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;SystemContextDiagram&quot; title=&quot;SystemContextDiagram&quot; src=&quot;/static/1016c8fef39820a1203529a32fce470c/fcda8/SystemContextDiagram.png&quot; srcset=&quot;/static/1016c8fef39820a1203529a32fce470c/12f09/SystemContextDiagram.png 148w,
+/static/1016c8fef39820a1203529a32fce470c/e4a3f/SystemContextDiagram.png 295w,
+/static/1016c8fef39820a1203529a32fce470c/fcda8/SystemContextDiagram.png 590w,
+/static/1016c8fef39820a1203529a32fce470c/efc66/SystemContextDiagram.png 885w,
+/static/1016c8fef39820a1203529a32fce470c/c83ae/SystemContextDiagram.png 1180w,
+/static/1016c8fef39820a1203529a32fce470c/f1841/SystemContextDiagram.png 4016w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
   &lt;/a&gt;
     &lt;/span&gt;
   &lt;/div&gt;
@@ -205,6 +110,21 @@ Within the team I took special notice of existing whitepapers and attempted to c
 /static/0d04244abaa55300743b8c84aa1f5d5f/efc66/ArchitectureOverviewDiagram.png 885w,
 /static/0d04244abaa55300743b8c84aa1f5d5f/c83ae/ArchitectureOverviewDiagram.png 1180w,
 /static/0d04244abaa55300743b8c84aa1f5d5f/a4a8f/ArchitectureOverviewDiagram.png 3563w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div style=&quot;width: 250px; 
+  margin: 0 1rem;
+    margin-bottom : 1.5rem;&quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin: 0 0 30px;&quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/0b46168791d3f5270e06665e8b24fc82/adfb4/ComponentDiagram.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 77.02702702702703%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAC4jAAAuIwF4pT92AAACl0lEQVQoz02SiW7bOBCG/f5PtHDSJqtsmvqSZR2O47i6JZKiSIrUfZdyC2SJATEk+OH/Z4YrLgTDaS7ENE3zNBdN7WaplxGHpZ8odhj2BPGy1CXJckmxjaFMUMHHcVwlGIMoEnd4HAbe1nroegiYBOhprKHwEHtq7NphoEfewb0FEFxcG2a0H4ZV27ZVVXEuHYicC1rmeuzrvmMkkYFjEwYGDE8g0CLPxPElwxea6DD0OJHgahiGvu/LsizKQnCecGaEngvifeD8dK63wL/EgRNHFgiOgWMSeKboCANP0Iyx1Xxfi+dxbJsmqysdRSaOtu5N8hrwN/ZVYufQc0C0D2yLQFmIzbCs8Qse7h5IkR8i7wh8NfZ3gaOi0PK9G4wNDKTmefEcfYZ+JNhSs8Sk+/6+ZN71nahEXhd5U4pahqAEUYJ5XfBKAAxgiqIoRhjLxwtMKZU967tunOcmgy14nbPdzLYtVES0J/6eOuv0tgaXNfp8ovZD6Bgc3Ma+XWxLOM/zuq6lOKMso1FLlSZ9rpMHaZYkbgEeRq7wRCXoQ8Rr/9eGg/cyF4vynznJVhdFQQnlDDSpUqIn+S5De440Fq49+wQchfr/1Mmzb6scXjkjCyzndB91RmgmEreMn7pUGehLET2OVOnw9yJ+LNGGed9K8NinShJoOfr4a/tPt7uubWS7MBy0l+74Upx+UP+j1l4bme+fR+O/+vhvr792p9fJeGvP6vD/UTVNI8+CMebYnbrJd2/8bHa7t8TU4dmiynffsshhG+qn6mINll5V9V944cdxmueWksbSJn03adtJ/Tlr2844dOZxOG5auet7eNwVp934rgsuvmCpvmyUzKfdbKpfYRyWWBJ10vfp7dpc36Wy/JG/ATbhMsDVGpPDAAAAAElFTkSuQmCC&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;ComponentDiagram&quot; title=&quot;ComponentDiagram&quot; src=&quot;/static/0b46168791d3f5270e06665e8b24fc82/fcda8/ComponentDiagram.png&quot; srcset=&quot;/static/0b46168791d3f5270e06665e8b24fc82/12f09/ComponentDiagram.png 148w,
+/static/0b46168791d3f5270e06665e8b24fc82/e4a3f/ComponentDiagram.png 295w,
+/static/0b46168791d3f5270e06665e8b24fc82/fcda8/ComponentDiagram.png 590w,
+/static/0b46168791d3f5270e06665e8b24fc82/efc66/ComponentDiagram.png 885w,
+/static/0b46168791d3f5270e06665e8b24fc82/c83ae/ComponentDiagram.png 1180w,
+/static/0b46168791d3f5270e06665e8b24fc82/adfb4/ComponentDiagram.png 4562w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
   &lt;/a&gt;
     &lt;/span&gt;
   &lt;/div&gt;
