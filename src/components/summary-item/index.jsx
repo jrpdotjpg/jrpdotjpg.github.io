@@ -3,7 +3,9 @@ import React from 'react';
 
 const classes = {
   wrapper: 'mb-6',
-  name: 'font-semibold text-gray-900 pb-1',
+  name_link: 'font-semibold text-blue-500 pb-1',
+  name_nolink: 'font-semibold text-grey-900 pb-1',
+  name_link_hover: 'hover:underline hover:text-blue-600',
   description: 'text-md text-gray-600 font-light',
 };
 
@@ -18,9 +20,10 @@ const SummaryItem = ({ name, description, link = false, internal = false }) => {
   return (
     <div className={classes.wrapper}>
       <h3
-        className={`${classes.name} ${
-          link ? 'hover:underline hover:text-black' : ''
-        }`}
+        className={`
+          ${link ? classes.name_link : classes.name_nolink} 
+          ${link ? classes.name_link_hover : ''}
+        `}
       >
         {link ? linkContent : name}
       </h3>
