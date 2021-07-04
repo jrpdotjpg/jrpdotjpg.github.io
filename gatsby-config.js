@@ -16,9 +16,9 @@ module.exports = {
     // Optional: LinkedIn account URL
     // linkedin: `https://www.linkedin.com/in/ryanafitzgerald/`,
     // Content of the About Me section
-    about: `I'm a 3rd-going-on-4th year undergraduate studying Electronic and Information Engineering.
+    about: `I'm a 3rd-going-on-4th year undergraduate student studying Electronic and Information Engineering.
               Pre-lockdown my interests were hiking, running, climbing and swimming, something I hope to resume shortly.
-              I am academically interested in all elements of AI, but specifically I'd like to continue in reinforcement learning, and AI in social science.`,
+              I am interested in all elements of AI, but specifically I'd like to continue in reinforcement learning, and AI in social science.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       // {
