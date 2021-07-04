@@ -1,7 +1,7 @@
 ---
 title: Robot Localisation
 date: '2021-03-02T12:00:00.00Z'
-description: "Monte Carlo Localisation"
+description: "Monte Carlo localisation in a simulated environment"
 ---
 
 As part of a Robotics course, we built simulated robots in small teams that could accurately trace a route around a map, using predefined waypoints.
