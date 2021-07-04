@@ -1,7 +1,7 @@
 ---
 title: Track and Trace System Architecture Design
 date: '2020-06-20T12:00:00.00Z'
-description: 'Designing an architecture for a UK track and trace system.'
+description: 'Designing an architecture for a UK track and trace system'
 ---
 
 This project, conducted prior to the release of most major proposed/implemented track and trace algorithms, required the creation of work products detailing the proposed architecture at a range of levels of precision. 
